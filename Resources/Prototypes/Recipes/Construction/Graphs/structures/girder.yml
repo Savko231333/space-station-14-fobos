@@ -415,27 +415,7 @@
             - tool: Cutting
               doAfter: 1
 
-    - node: miningWall # DS14
-      entity: WallMining
-      edges:
-        - to: reinforcedGirder
-          steps:
-            - tool: Cutting
-              doAfter: 2
-            - tool: Screwing
-              doAfter: 2
-            - tool: Welding
-              doAfter: 5
-            - tool: Prying
-              doAfter: 1
-            - tool: Anchoring
-              doAfter: 1
-            - tool: Prying
-              doAfter: 1
-            - tool: Screwing
-              doAfter: 2
-            - tool: Cutting
-              doAfter: 3
+
           
     - node: diagonalMiningWall # DS14
       entity: WallMiningDiagonal
