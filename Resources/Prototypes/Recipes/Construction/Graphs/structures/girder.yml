@@ -439,10 +439,6 @@
       entity: WallMining
       edges:
         - to: reinforcedGirder
-          completed:
-            - !type:SpawnPrototype
-              prototype: SheetPlasteel1
-              amount: 2
           steps:
             - tool: Cutting
               doAfter: 2
