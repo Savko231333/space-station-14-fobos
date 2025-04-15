@@ -13,6 +13,12 @@
                     Text="{Loc 'ui-rules-button-home'}"
                     HorizontalAlignment="Right"
                     VerticalAlignment="Top"/>
+            <Control MinWidth="5"/>
+            <Button Name="WikiButton"
+                    Access="Public"
+                    Text="{Loc 'ui-escape-wiki'}"
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Top"/>
         </BoxContainer>
     </Control>
 </BoxContainer>
