@@ -19,8 +19,6 @@
     sprite: _DeadSpace/Objects/Specific/Chapel/censer.rsi
     layers:
     - state: icon
-  - type: Spillable
-    solution: Censer
   - type: RefillableSolution
     solution: Censer
   - type: UserInterface
@@ -37,8 +35,6 @@
     quickEquip: false
     slots:
     - Belt
-  - type: DrainableSolution
-    solution: Censer
   - type: Censer
     heailng:
       groups:
