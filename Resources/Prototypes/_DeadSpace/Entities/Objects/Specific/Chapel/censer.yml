@@ -2,11 +2,13 @@
   parent: BaseItem
   id: Censer
   name: кадило
-  description: Кадило, усилинное для обороны священника от нечисти и не только. Наполняется жидкостями.
+  description: Кадило, которое модифицированно особой системой испарения святой воды, этв система позволяет дыму оказывать лечебный эффект.
   components:
+  - type: UseDelay
+    delay: 30.0
   - type: SolutionContainerManager
     solutions:
-      drink:
+      Censer:
         maxVol: 100
         reagents:
           - ReagentId: Holywater
@@ -18,9 +20,9 @@
     layers:
     - state: icon
   - type: Spillable
-    solution: drink
+    solution: Censer
   - type: RefillableSolution
-    solution: drink
+    solution: Censer
   - type: UserInterface
     interfaces:
       enum.TransferAmountUiKey.Key:
@@ -36,4 +38,12 @@
     slots:
     - Belt
   - type: DrainableSolution
-    solution: drink
+    solution: Censer
+  - type: Censer
+    heailng:
+      groups:
+        Brute: -45
+        Burn: -45
+        Airloss: -30
+  - type: ExaminableSolution
+    solution: Censer
