@@ -23,7 +23,7 @@ public sealed partial class CenserComponent : Component
     /// <summary>
     /// The amount of reagent that is consumed
     /// </summary>
-    [DataField, AutoNetworkedField]
+    [DataField]
     public FixedPoint2 Consumption = FixedPoint2.New(50.0f);
 
     /// <summary>
@@ -36,6 +36,6 @@ public sealed partial class CenserComponent : Component
     /// The damage that will be dealt at the end of use
     /// </summary>
     [DataField("heailng", required: true)]
-    [ViewVariables(VVAccess.ReadWrite)]
+    [ViewVariables]
     public DamageSpecifier Damage = default!;
 }
