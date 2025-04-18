@@ -38,12 +38,14 @@ public sealed class CenserSystem : EntitySystem
         if (!TryComp(ent, out UseDelayComponent? useDelay) || _delay.IsDelayed((ent, useDelay)))
             return;
 
-        if (_solutionContainer.GetTotalPrototypeQuantity(ent, ent.Comp.Reagent) < ent.Comp.Consumption){
+        if (_solutionContainer.GetTotalPrototypeQuantity(ent, ent.Comp.Reagent) < ent.Comp.Consumption)
+        {
             var notEnoughReagentMessage = Loc.GetString("censer-notenought-reagent");
             _popupSystem.PopupEntity(notEnoughReagentMessage, args.User, args.User, PopupType.Large);
             _delay.TryResetDelay((ent, useDelay));
             return;
         }
+
         _solutionContainer.RemoveReagent(solution.Value, ent.Comp.Reagent, ent.Comp.Consumption);
 
         var damage = _damageableSystem.TryChangeDamage(args.Target!.Value, ent.Comp.Damage, true, origin: ent);
@@ -81,6 +83,7 @@ public sealed class CenserSystem : EntitySystem
 
             return;
         }
+
         var doAfterCancelled = !_doAfterSystem.TryStartDoAfter(new DoAfterArgs(EntityManager, args.User, uid.Comp.UsingDelay, new CenserDoAfterEvent(), uid, target: args.Target, used: uid)
         {
             NeedHand = true,
