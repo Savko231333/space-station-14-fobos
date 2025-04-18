@@ -1,7 +1,6 @@
 using Content.Shared.FixedPoint;
 using Robust.Shared.Prototypes;
 using Content.Shared.Chemistry.Reagent;
-using Robust.Shared.Audio;
 using Content.Shared.Damage;
 
 namespace Content.Server.DeadSpace.Censer;
