@@ -4,9 +4,28 @@
   name: РСУ старшего инженера
   description: Улучшенная версия базового РСУ которая самовосстанавливет заряды.
   components:
-    - type: Sprite
-      sprite: _DeadSpace/Objects/Tools/cercd.rsi
-      layers:
-        - state: icon
-    - type: AutoRecharge
-      rechargeDuration: 120
+  - type: Sprite
+    sprite: _DeadSpace/Objects/Tools/cercd.rsi
+    layers:
+    - state: icon
+  - type: RCD
+    availablePrototypes:
+    - WallSolidCE
+    - FloorSteel
+    - Plating
+    - Catwalk
+    - GrilleCE
+    - WindowCE
+    - WindowDirectionalCE
+    - WindowReinforcedDirectionalCE
+    - ReinforcedWindowCE
+    - AirlockCE
+    - AirlockGlassCE
+    - FirelockCE
+    - TubeLightCE
+    - BulbLightCE
+    - LVCable
+    - MVCable
+    - HVCable
+    - CableTerminal
+    - Deconstruct
