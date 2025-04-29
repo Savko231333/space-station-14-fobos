@@ -1248,7 +1248,7 @@
     graph: Girder
     node: miningWall
   - type: StaticPrice
-    price: 70
+    price: 150
     
 - type: entity
   parent: WallShuttleDiagonal
