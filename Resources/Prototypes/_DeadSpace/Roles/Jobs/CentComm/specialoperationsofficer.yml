@@ -12,6 +12,9 @@
   - AllAccess
   access:
   - CentralCommand
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant, TrackingImplant ]
 
 - type: startingGear
   id: CentcomSpecialOperationsOfficerGear
@@ -50,7 +53,8 @@
   id: BoxFolderBlueFilled
   name: папка с секретными документами
   description: Вам точно не следует знать что там написано. В любом случае, текст написан особыми невидимыми чернилами.
-  suffix: НЕ МАППИТЬ, СОБСТВЕННОСТЬ ОСО
+  suffix: СОБСТВЕННОСТЬ ОСО
+  categories: [ DoNotMap ]
   components:
     - type: StorageFill
       contents:

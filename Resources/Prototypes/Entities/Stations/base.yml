@@ -10,6 +10,13 @@
   components:
     - type: StationBankAccount
     - type: StationCargoOrderDatabase
+      orders:
+        Cargo: [ ]
+        Engineering: [ ]
+        Medical: [ ]
+        Science: [ ]
+        Security: [ ]
+        Service: [ ]
     - type: StationCargoBountyDatabase
 
 - type: entity
@@ -52,6 +59,7 @@
             - type: TradeStation
           paths:
             - /Maps/Shuttles/trading_outpost.yml
+          nameDataset: NamesTradingOutpost # DS14
         # Spawn last
         ruins: !type:GridSpawnGroup
           hide: true
@@ -136,6 +144,12 @@
   abstract: true
   components:
     - type: StationNews
+
+- type: entity
+  id: BaseStationDeliveries
+  abstract: true
+  components:
+  - type: CargoDeliveryData
 
 - type: entity
   id: BaseStationAllEventsEligible
