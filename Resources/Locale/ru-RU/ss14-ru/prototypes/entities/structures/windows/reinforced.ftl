@@ -3,5 +3,5 @@ ent-ReinforcedWindow = бронированное окно
 ent-WindowReinforcedDirectional = направленное бронеокно
     .desc = Смотри не заляпай.
 ent-ReinforcedWindowDiagonal = { ent-ReinforcedWindow }
-    .suffix = diagonal
+    .suffix = Диагональ
     .desc = { ent-ReinforcedWindow.desc }

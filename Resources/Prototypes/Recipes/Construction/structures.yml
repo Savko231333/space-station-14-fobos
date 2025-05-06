@@ -88,9 +88,11 @@
   conditions:
     - !type:TileNotBlocked
 
+# DS14-start
+
 - type: construction
   name: шахтёрская стена
-  id: MiningWall # DS14
+  id: MiningWall
   graph: Girder
   startNode: start
   targetNode: miningWall
@@ -109,7 +111,7 @@
 
 - type: construction
   name: диагональная шахтёрская стена
-  id: MiningWallDiagonal # DS14
+  id: MiningWallDiagonal
   graph: Girder
   startNode: start
   targetNode: diagonalMiningWall
@@ -123,6 +125,8 @@
   canBuildInImpassable: false
   conditions:
     - !type:TileNotBlocked
+
+# DS14-end
 
 - type: construction
   name: clock wall

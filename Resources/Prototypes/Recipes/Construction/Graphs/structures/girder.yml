@@ -287,7 +287,8 @@
               amount: 2
               doAfter: 1
 
-        - to: miningWall # DS14
+        # DS14-start
+        - to: miningWall
           completed:
             - !type:SnapToGrid
               southRotation: true
@@ -302,7 +303,7 @@
               amount: 2
               doAfter: 1
 
-        - to: diagonalMiningWall # DS14
+        - to: diagonalMiningWall
           completed:
             - !type:SnapToGrid
               southRotation: false
@@ -317,6 +318,7 @@
             - material: Steel
               amount: 1
               doAfter: 1
+        # DS14-end
 
         - to: shuttleWall
           completed:
@@ -415,7 +417,8 @@
             - tool: Cutting
               doAfter: 1
 
-    - node: miningWall # DS14
+    # DS14-start
+    - node: miningWall
       entity: WallMining
       edges:
         - to: reinforcedGirder
@@ -437,7 +440,7 @@
             - tool: Cutting
               doAfter: 3
           
-    - node: diagonalMiningWall # DS14
+    - node: diagonalMiningWall
       entity: WallMiningDiagonal
       edges:
         - to: reinforcedGirder
@@ -460,6 +463,7 @@
               doAfter: 1
             - tool: Cutting
               doAfter: 1
+    # DS14-end
 
     - node: shuttleWall
       entity: WallShuttle
