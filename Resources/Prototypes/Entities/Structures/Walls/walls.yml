@@ -1247,9 +1247,7 @@
   - type: Construction # DS14
     graph: Girder
     node: miningWall
-  - type: StaticPrice
-    price: 150
-    
+
 - type: entity
   parent: WallShuttleDiagonal
   id: WallMiningDiagonal
